@@ -111,7 +111,10 @@ class Deck {
     deck1.dealHand();
     deck1.playRound(this.player1Hand, this.player2Hand);
     deck1.declareWinner(this.player1Score, this.player2Score)
-    }
+    
+//How do I make this general so that it works regardless of what the new Deck is named?     
+
+}
 }
 
 let deck1 = new Deck;
