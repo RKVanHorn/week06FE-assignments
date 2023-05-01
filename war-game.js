@@ -63,7 +63,7 @@ class Deck {
     }
 
 
-    playRound(hand1, hand2){    
+    playRound(){    
         let player1Card  
         let player2Card 
         for(let i = 0; i < 26; i++){
@@ -95,26 +95,24 @@ class Deck {
         }
     }
 
-    declareWinner(score1, score2){
+    declareWinner(){
         if(this.player1Score > this.player2Score){
-            console.log(`Congratulations Player 1, YOU WIN!`)
+            console.log(`Congratulations Player 1, YOU WIN!`);
         } else if (this.player2Score > this.player1Score){
-            console.log(`Congratulations Player 2, YOU WIN!`)
+            console.log(`Congratulations Player 2, YOU WIN!`);
         } else {
-            console.log(`It's a tie! Want to play again?`)
+            console.log(`It's a tie! Want to play again?`);
         }
     }
 
-    playGame(deck){
-    deck1.createDeck();
-    deck1.shuffleDeck();
-    deck1.dealHand();
-    deck1.playRound(this.player1Hand, this.player2Hand);
-    deck1.declareWinner(this.player1Score, this.player2Score)
-    
-//How do I make this general so that it works regardless of what the new Deck is named?     
+    playGame(){
+        this.createDeck();
+        this.shuffleDeck();
+        this.dealHand();
+        this.playRound(this.player1Hand, this.player2Hand);
+        this.declareWinner(this.player1Score, this.player2Score);  
 
-}
+    }
 }
 
 let deck1 = new Deck;
