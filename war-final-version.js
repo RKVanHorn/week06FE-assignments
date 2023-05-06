@@ -76,7 +76,7 @@ tie, no points are awarded and the score remains the same.*/
     playRound(){    
         let player1Card  
         let player2Card 
-        console.log(`Let's play a round of War!`)
+        console.log(`Shall we play a game?`)
         for(let i = 0; i < 26; i++){
              player1Card = this.gamePlayer.player1Hand.pop();
              player2Card = this.gamePlayer.player2Hand.pop();
@@ -106,7 +106,7 @@ tie, no points are awarded and the score remains the same.*/
         } else if (this.gamePlayer.player2Score > this.gamePlayer.player1Score){
             console.log(`Congratulations Player 2, YOU WIN!`);
         } else {
-            console.log(`It's a tie! Want to play again?`);
+            console.log(`It's a tie! Now, how about a nice game of chess?`);
         }
     }
 /* put all the methods together so that only one needs to be called to run a game.*/
