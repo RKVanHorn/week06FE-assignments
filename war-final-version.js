@@ -6,12 +6,12 @@ class Deck {
 /*create a deck that consists of an array of 52 objects that each have 2
 key:value pairs consisting of name and value. Also, Aces high!*/ 
     createDeck(){
-        const suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades'];
+        const suits = ['♥', '♦', '♣', '♠'];
         const values = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King', 'Ace'];
         for(let suitName of suits){
             for (let cardValue of values){
                 this.deck.push({
-                    name: `${cardValue} of ${suitName}`,
+                    name: `${cardValue} ${suitName}`,
                     value: values.indexOf(cardValue)
                 });
             }
