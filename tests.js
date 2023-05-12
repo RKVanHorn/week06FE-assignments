@@ -10,7 +10,7 @@ describe('Week 6 Final Project Unit Test', () => {
             }
         
             createDeck(){
-                const suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades'];
+                const suits = ['♥', '♦', '♣', '♠'];
                 const values = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King', 'Ace'];
                 for(let suitName of suits){
                     for (let cardValue of values){
